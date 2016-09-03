@@ -28,34 +28,30 @@ hr {
 <!-- original work of mine using a lot of info of the internet to make a sweet simple script -->
 <!-- note: correct use of the echo is not established, I mean I'm not sure -->
 
+<!--Header -->
 <div class="w3-container w3-round w3-green w3-padding-medium w3-xxlarge"> 
 <!-- <img src="fat_asterix.svg" height="48" alt="Fat Asterix Wildcard logo"/> --> 
 <b>ASTERIX *</b> <span class="w3-xlarge w3-text-yellow">player</span> 
-
-
 </div>
+<!--Header -->
 
+<!--Scan and Show -->
 <div class="w3-margin-left"> 
-
 <br />
-
 <?php
   //start scan directory
   //outputs true if .mp3 or .MP3 found in the string. if its MP3 or mp3 then it also captures fileneames like MP3_Player.php 
   //Show the user the content of the array one at a time , these are filenames.
   //Note there are MP3files which are the names of the files which need %20 instead of space to make them usable by the player
   //there are MP3filenames which dont have any formating and are what the user sees directly on the ftp site.
-  //The Audio is HTML 5 the \" lets the Quations be used and not parsed.
-  //Pindex increments for filename audio title index playlist
+  //The audio player is HTML 5 the \" lets the Quations be used and not parsed.
+  //Pindex increments, adding a prefix number before the filename / audio title, thus a pseudo playlist.
 
   $dir = '.';
-
-  //Sort in ascending order - this is default
-  $MP3filenames = scandir($dir); //scan the directory . is current, place results into an array
+  $MP3filenames = scandir($dir); //scan the current directory , place results into an array. Sort in ascending order - this is default
   $MP3files = str_replace(' ', '%20', $MP3filenames); //replace spaces with the code for space
 
-  //count number of files in the array the loop until finished
-  $NoOfFiles = count($MP3filenames);
+  $NoOfFiles = count($MP3filenames); //count number of files in the array 
 
   $Pindex = 0;
   for($n = 0; $n < $NoOfFiles; $n++) {
@@ -66,18 +62,20 @@ hr {
            <audio controls>
            <source src=$MP3files[$n] type=\"audio/mpeg\">
            </audio>
-		   <hr />";
+	   <hr />";
     }
    }
 ?>
-
 </div>
+<!--Scan and Show -->
 
+<!-- Footer -->
 <div class = "w3-round w3-green w3-padding-medium w3-small">
 <a href="http://www.w3.org/html/logo/">
 <img src="https://www.w3.org/html/logo/badge/html5-badge-h-multimedia.png" width="64" height="32" alt="HTML5 Powered with Multimedia" title="HTML5 Powered with Multimedia">
 </a>2016 Pete Garrity
 </div>
+<!-- Footer -->
 
 </body>
 </html>
