@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css">
 <!-- w3.css, above This code is makes the site responsive to any browser, if its missing it looks bad on mobile phones.  Thanks W3schools -->
-<title>Dharma MP3 player</title>
+<title>Asterix MP3 player</title>
 <style>
 hr { 
     display: block;
@@ -29,7 +29,7 @@ hr {
 <!-- note: correct use of the echo is not established, I mean I'm not sure -->
 
 <div class="w3-container w3-round w3-green w3-padding-medium w3-xxlarge"> 
-<img src="fat_asterix.svg" height="48" alt="Fat Asterix Wildcard logo"/> 
+<!-- <img src="fat_asterix.svg" height="48" alt="Fat Asterix Wildcard logo"/> -->
 <b>MP3</b> <span class="w3-xlarge w3-text-yellow">player</span> 
 
 
