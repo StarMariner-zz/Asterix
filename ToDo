@@ -1,0 +1,4 @@
+// use CASE instead of IF loops so that more file types can be found.
+// permitations of MP3 mp3 Mp3 mP3 ect to be simplified.
+// Keep simple. Avoid long caching codes within the php. 
+// Try to keep readable and remarked.Keep revising and beautifiying the code. 
