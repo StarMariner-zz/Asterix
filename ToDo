@@ -1,4 +1,5 @@
-// use CASE instead of IF loops so that more file types can be found.
-// permitations of MP3 mp3 Mp3 mP3 ect to be simplified.
-// Keep simple. Avoid long caching codes within the php. 
-// Try to keep readable and remarked.Keep revising and beautifiying the code. 
+// 1. Use CASE instead of IF loops, so that more file types can be found.
+// 2. Permitations of MP3 mp3 Mp3 mP3 ect to be simplified.
+// [Done 1,2]  CASE and Permitations above, use FOREACH with an array of mp3,MP3,mP3 ect values.
+// 3. Keep simple. Avoid long caching codes within the php. WIP 09/09/2016 
+// 4. Try to keep readable and remarked.Keep revising and beautifiying the code. 
